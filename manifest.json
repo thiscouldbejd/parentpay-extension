@@ -10,12 +10,14 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
+  "permissions": ["tabs", "https://*.parentpay.com/*"],
   "content_scripts": [
       {
     "matches": [
-      "*://*/*"
+      "https://*.parentpay.com/*"
     ],
     "js": [
+      "jquery.js",
       "script.js"
     ]
   }],
